@@ -5,7 +5,7 @@
 > docker run --link=$TDENGINE_INSTANCE_NAME -it spark /bin/bash
 
 
-###Spark连接样例  
+### Spark连接样例  
 > val jdbcDF = spark.read
   .format("jdbc")
   .option("url", "jdbc:TAOS://IP:6035/log?user=test&password=test")
